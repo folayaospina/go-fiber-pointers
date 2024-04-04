@@ -23,19 +23,19 @@ func FuncionInicialDeApuntadoresEjemploHandler(ctx *fiber.Ctx) error {
 }
 
 func ApuntadoresConArreglosHandler(ctx *fiber.Ctx) error {
-	var personas internal.Arreglo
-/* 
-	if err := ctx.BodyParser(&personas); err ! */= nil {
+	personas := new(internal.Arreglo)
+
+	if err := ctx.BodyParser(&personas); err != nil {
 		return err
 	}
-	
-	body := ctx.Body()
-	reader := bytes.NewReader(body)
-	lectura, err := io.ReadAll(reader)
 
-	if err != nil {
-		return err
+	for _, v := range personas {
+		p
 	}
 
 	return nil
+}
+
+func New(arreglo internal.Arreglo) {
+	panic("unimplemented")
 }

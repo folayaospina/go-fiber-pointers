@@ -1,7 +1,7 @@
 package internal
 
 type Person struct {
-	Name string `json: name`
+	Name string `json: Name`
 }
 
 type Arreglo struct {

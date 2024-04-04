@@ -12,6 +12,8 @@ func PruebaPointer(person *internal.Person) string {
 	return "Esto es prueba pointer con struct person: " + person.Name
 }
 
-func PruebaPointersArray(personas *internal.Arreglo) {
+func PruebaPointersArray(bytes *[]byte) {
+
+	return bytes
 
 }
